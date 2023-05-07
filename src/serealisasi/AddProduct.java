@@ -201,6 +201,13 @@ public class AddProduct extends javax.swing.JDialog {
                 ProductItem pi = new ProductItem(item_name, price);
                 p.add(pi);
             }
+            
+            MainForm.product.setId(id_produk);
+            MainForm.product.setNama(nama_produk);
+            MainForm.product.setItems(p);
+            
+            this.dispose();
+            JOptionPane.showMessageDialog(this, "Data telah disimpan");
         }
     }//GEN-LAST:event_btnSimpanActionPerformed
 
